@@ -1,0 +1,13 @@
+José-Manuel Herruzo <jmherruzo@uma.es>,
+Jesús Alastruey-Benedé <jalastru@unizar.es> and
+Pablo Ibáñez-Marín <imarin@unizar.es> wrote bvSFM.
+
+The Succinct Data Structure Library (SDSL) is used in bvSFM to compute suffix arrays.
+The main contributors to the SDSL library are:
+- Johannes Bader
+- Timo Beller
+- Simon Gog (Creator)
+- Matthias Petri
+For more info, visit https://github.com/simongog/sdsl-lite
+
+February 2019
