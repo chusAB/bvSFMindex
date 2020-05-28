@@ -2,15 +2,15 @@
 
 [bvSFM] (bit-vector sampled FM-index) is a tool for sequence alignment. Specifically, it implements an exact search
 algorithm that counts the number of matches of arbitrary length reads on a reference genome.
-[bvSFM] indexes a genome with an [FM Index][FM Index Wiki] (based on the [Burrows-Wheeler Transform] or [BWT]).
-[FM Index] is a compact data structure suitable for fast matches of short reads to large reference genomes.
+[bvSFM] indexes a genome with an [FM Index] based on the [Burrows-Wheeler Transform] or [BWT].
+[FM Index] is a compact data structure suitable for fast matches of short reads to large reference genomes ([FM Index Wiki]).
 For the human genome, its memory footprint is typically around 3.2 gigabytes of RAM.
 
 [bvSFM] uses an optimized FM-index data structure layout and codification that
 packs all relevant data needed in a query step within a single cache block,
 minimizing the memory bandwidth demand.
 [bvSFM] achieves best results when executed on multicore systems integrating high bandwidth memory,
-for instance an Intel Xeon Phi processor [KNLa][KNLb] (codenamed Knights Landing, or KNL).
+for instance an [Intel Xeon Phi processor] (codenamed [Knights Landing], or KNL).
 
 [bvSFM] is distributed under the [GPLv3 license], and it runs on the command line under Linux.
 
@@ -198,7 +198,7 @@ This project is licensed under the GNU General Public License v3.0 - see the `CO
 
 [BWT]:                                                http://en.wikipedia.org/wiki/Burrows-Wheeler_transform
 [bvSFM]:                                              https://ieeexplore.ieee.org/document/8566001
-[Burrows-Wheeler Transform]:                          http://en.wikipedia.org/wiki/Burrows-Wheeler_transform
+[Burrows-Wheeler Transform]:                          https://www.hpl.hp.com/techreports/Compaq-DEC/SRC-RR-124.html
 [chus web page]:                                      http://webdiis.unizar.es/u/chus/
 [FM Index]:                                           http://portal.acm.org/citation.cfm?id=796543
 [FM Index Wiki]:                                      http://en.wikipedia.org/wiki/FM-index
@@ -206,8 +206,8 @@ This project is licensed under the GNU General Public License v3.0 - see the `CO
 [GPLv3 license]:                                      http://www.gnu.org/licenses/gpl-3.0.html
 [imarin web page]:                                    http://webdiis.unizar.es/u/imarin/
 [jmherruzo web page]:                                 https://github.com/jmherruzo
-[KNLa]:                                               https://ieeexplore.ieee.org/document/7453080
-[KNLb]:                                               https://www.elsevier.com/books/intel-xeon-phi-processor-high-performance-programming/jeffers/978-0-12-809194-4
+[Intel Xeon Phi processor]:                           https://ieeexplore.ieee.org/document/7453080
+[Knights Landing]:                                    https://www.elsevier.com/books/intel-xeon-phi-processor-high-performance-programming/jeffers/978-0-12-809194-4
 [k-step FM-Index]:                                    https://github.com/achacond/k-step_FM-index
 [divsufsort library]:                                 https://github.com/y-256/libdivsufsort/
 [memkind]:                                            https://github.com/memkind/memkind
